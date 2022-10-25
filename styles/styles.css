@@ -169,3 +169,39 @@ h1 span {
     font-style: italic;
     padding: 19px 42px;
 }
+
+.hero2 {
+    background-color: #131313;
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+    position: relative;
+}
+
+.hero2-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.hero2-container {
+    position: relative;
+    z-index: 1;
+}
+
+.text2 {
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff;
+    padding-top: 19px;
+    padding-bottom: 41px;
+}
+
