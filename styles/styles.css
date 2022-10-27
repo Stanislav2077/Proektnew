@@ -205,3 +205,261 @@ h1 span {
     padding-bottom: 41px;
 }
 
+.projects {
+    background: #131313;
+}
+
+.projects .wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding: 107px 42px 416px;
+}
+
+.left-side {
+    margin-right: 50px;
+}
+
+.project-title {
+    margin: 0;
+    margin-bottom: 34px;
+    width: 160px;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.project-text {
+    margin-bottom: 42px;
+    font-family: 'NunitoSans-Regular';
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.slider-mobile {
+    display: none;
+}
+
+.project-table:first-of-type {
+    margin-bottom: 34px;
+}
+
+.table-title {
+    height: 25px;
+}
+
+.project-table thead {
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.project-table tbody {
+    font-family: 'NunitoSans-Regular';
+    color: #ffffff;
+}
+
+.project-table td {
+    width: 190px;
+    font-size: 13px;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 206px;
+    margin-top: 80px;
+}
+
+.nav-button {
+    width: 41px;
+    height: 13px;
+    top: 4px;
+    background-color: transparent;
+    background-image: url(../img/arrow_left.svg);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3;
+}
+
+.nav-button-right {
+    background-image: url(../img/arrow_right.svg);
+}
+
+.slider-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 64px;
+}
+
+.nav-dots {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3;
+}
+
+.nav-dots.active {
+    background-color: #ffffff;
+}
+
+.slider-nav button:hover {
+    opacity: 0.5;
+}
+
+.project-link {
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-right: 55px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.project-link:last-child {
+    margin-right: 0;
+}
+
+.project-link.active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.project-img {
+    margin-top: 45px;
+}
+
+.control {
+    margin-top: -344px;
+    padding-bottom: 148px;
+}
+
+.control .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.subtitle::after {
+    position: absolute;
+    content: '';
+    width: 114px;
+    height: 28px;
+    top: 30px;
+    left: 50%;
+    margin-left: -57px;
+    background-image: url('../img/camera.svg');
+}
+
+.subtitle-white {
+    color: #ffffff;
+}
+
+.control-wrap {
+    position: relative;
+    margin-top: 72px;
+    transition: all 0.3s;
+}
+
+.control-img {
+    display: block;
+    max-width: 817px;
+    filter: brightness(20%);
+}
+
+.control-wrap::before {
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 85px;
+    top: 50%;
+    left: 50%;
+    margin-top: -42px;
+    margin-left: -42px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.control-wrap::after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -10px;
+    background-image: url('../img/Polygon.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.control-wrap:hover::before,  .control-wrap:hover::after{
+    opacity: 0.5;
+}
+
+.control-text {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 98px;
+    max-width: 680px;
+    font-family: 'NunitoSans-Regular';
+    line-height: 36px;
+    text-align: center;
+}
+
+.control-text::before {
+    position: absolute;
+    content: '';
+    width: 56px;
+    height: 2px;
+    top: -34px;
+    left: 50%;
+    margin-left: -28px;
+    background-color: #E3B873;
+}
+
+.control-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 770px;
+    margin-top: 92px;
+}
+
+.label {
+    width: 230px;
+    padding: 0;
+    font-family: 'NunitoSans-Regular';
+    font-size: 13px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.input {
+    width: 230px;
+    padding: 6px 0px;
+    font-family: 'NunitoSans-Regular';
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.3);
+}
+
+input::placeholder {
+    color: #363636;
+}
+
