@@ -228,6 +228,9 @@ h1 span {
 }
 
 .project-title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
     margin: 0px ;
     margin-bottom: 34px;
     width: 120px;
@@ -254,7 +257,13 @@ h1 span {
 }
 
 .table-title {
-    height: 25px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
 }
 
 .project-table thead {
@@ -361,12 +370,16 @@ h1 span {
 } */
 
 .project-link {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
     display: inline-block;
     padding-bottom: 0px;
     margin-right: 55px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.3);
-    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -375,6 +388,12 @@ h1 span {
 }
 
 .project-link.active {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;   
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
 }
