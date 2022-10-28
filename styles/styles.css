@@ -34,6 +34,13 @@ body {
     line-height: 15px;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
 body * {
     box-sizing: border-box;
 }
@@ -139,7 +146,7 @@ h1 span {
     line-height: 36px;
     color: #ffffff;
     padding-top: 19px;
-    padding-bottom: 41px;
+    padding-bottom: 22px;
 }
 
 .button_1 {
@@ -148,12 +155,12 @@ h1 span {
     border-radius: 2px;
     outline: 0;
     border: 0;
-    padding: 13px 33px;
+    padding: 19px 42px;
+    margin-right: 20px;
     color:#ffffff;
     text-transform: uppercase;
     font-family: 'Nunito Sans';
     font-style: italic;
-    padding: 19px 42px;
 }
 
 .button_2 {
@@ -162,12 +169,11 @@ h1 span {
     border-radius: 2px;
     border: 1px solid #ffffff;
     outline: 0;
-    padding: 13px 33px;
+    padding: 19px 23px;
     color:#ffffff;
     text-transform: uppercase;
     font-family: 'Nunito Sans';
     font-style: italic;
-    padding: 19px 42px;
 }
 
 .hero2 {
@@ -216,13 +222,15 @@ h1 span {
 }
 
 .left-side {
+    margin: 0px;
     margin-right: 50px;
+    padding: 177px 50px 35px;
 }
 
 .project-title {
-    margin: 0;
+    margin: 0px ;
     margin-bottom: 34px;
-    width: 160px;
+    width: 120px;
     font-size: 27px;
     line-height: 37px;
     text-transform: uppercase;
@@ -264,7 +272,48 @@ h1 span {
     font-size: 13px;
 }
 
-.slider-nav {
+
+
+
+
+
+.control-slayer {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.control-pfeil__left {
+    margin-right: 20px;
+}
+
+.control-slayer__radius-white {
+    background: #fff;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    margin: 0 9px;
+}
+
+.control-slayer__radius {
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    margin: 0 9px;
+}
+
+.control-pfeil__right {
+    margin-left: 20px;
+
+}
+
+.control-slayer__img {
+    width: 50%;
+}
+/* .slider-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,11 +358,11 @@ h1 span {
 
 .slider-nav button:hover {
     opacity: 0.5;
-}
+} */
 
 .project-link {
     display: inline-block;
-    padding-bottom: 7px;
+    padding-bottom: 0px;
     margin-right: 55px;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.3);
@@ -331,7 +380,7 @@ h1 span {
 }
 
 .project-img {
-    margin-top: 45px;
+    margin-top: 52px;
 }
 
 .control {
