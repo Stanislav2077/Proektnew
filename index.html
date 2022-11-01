@@ -49,17 +49,17 @@
 
 
 
-        <section class="projects" id="projects">
+        <section class="projects">
             <div class="container">
                 <div class="wrapper">
                     <div class="left-side">
                         <h2 class="project-title">Completed projects</h2>
                         <p class="project-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
-                        <div class="slider-mobile">
-                            <img src="images/hero 2.1.jpg" alt="изображение интерьера" class="project-img">
-                            <button class="slider-left"></button>
-                            <button class="slider-right"></button>
-                        </div>
+                        <!-- <div class="slider-mobile">
+                            <!-- <img src="images/hero 2.1.jpg" alt="изображение интерьера" class="project-img"> -->
+                            <!-- <button class="slider-left"></button> -->
+                            <!-- <button class="slider-right"></button> -->
+                        <!-- </div> --> -->
                         <table class="project-table">
                             <thead>
                                 <tr class="table-title">
@@ -95,32 +95,13 @@
                             <span class="control-slayer__radius"> </span>
                             <span class="control-slayer__radius"> </span>
                             <img class="control-pfeil__right" src="images/arrow_right.svg" alt="pfeil">
-                        </div>
-                        
-                            
-                          
-                            
-
-                        <!-- <div class="slider-nav">
-                            <button class="nav-button nav-button-left"><img class="control-pfeil__left" src="images/arrow_left.svg" alt="pfeil"></button>
-                            <div class="slider-nav-wrap">
-                                <button class="nav-dots active"></button>
-                                <button class="nav-dots"></button>
-                                <button class="nav-dots"></button>
-                            </div>
-                            <button class="nav-button nav-button-right"><img class="control-pfeil__right" src="images/arrow_right.svg" alt="pfeil"></button>
-                        </div> -->
+                        </div>                   
                     </div>
                     <div class="right-side">
                         <a href="#" class="project-link active">Rostov-on-Don, Admiral</a>
                         <a href="#" class="project-link">Sochi Thieves</a>
-                        <a href="#" class="project-link">Rostov-on-Don Patriotic</a>
-                        <!-- <img src="images/hero 2.1.jpg" alt="Room" class="control-slayer__img">
-                            
-                            <!-- <img src="images/hero 2.jpg" alt="Room" class="control-slayer__img">
-                            
-                            <img src="img/room4.jpg" alt="Room" class="control-slayer__img"> -->
-                            <img src="images/hero 2.1.jpg" alt="изображение интерьера" class="project-img"> -->
+                        <a href="#" class="project-link">Rostov-on-Don Patriotic</a>     
+                        <img src="images/hero 2.1.jpg" alt="изображение интерьера" class="project-img">
                     </div>
                 </div>
             </div>
@@ -132,25 +113,33 @@
         <section class="control">
             <div class="container">
                 <h2 class="subtitle subtitle-white">online control</h2>
+                <div class="znak-camera">
+                    <img src="images/kamera.svg" alt="znak_camera">
+                </div>
                 <div class="control-wrap">
                     <img src="images/repair.jpg" alt="наблюдение за ремонтом" class="control-img">
+                    <img src="images/video.svg" alt="camera" class="control-img2">
+                    
                 </div>
                 <p class="control-text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
-                <form action="post" class="control-form">
-                    <div class="form-wrapper">
-                        <label class="label">Name
-                            <input class="input" type="text" placeholder="What is your name:">
-                        </label>
-                        <label class="label">Phone
-                            <input class="input" type="tel" placeholder="Your phone number:">
-                        </label>
+                <form class="video-form">
+                    <div class="video-form__wrap">
+                        <div class="video-form__item">
+                            <label class="video-form__title" for="some-input1">Name</label>
+                            <input type="text" class="video-form__input" id="some-input1" name="name" placeholder="What is your name:">
+                        </div>
+                        <div class="video-form__item">
+                            <label class="video-form__title" for="some-input2">Phone</label>
+                            <input type="tel" class="video-form__input" id="some-input2" name="name" placeholder="Your phone number:">
+                        </div>
+                        <button type="submit" class="video-form__buttom btn">
+                            Submit
+                        </button>
                     </div>
-                    <input class="button" type="submit" value="Submit">
-                    <label class="wrapper-checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox" checked>
-                        <span class="checkbox"></span>
-                        <span class="check-text">I agree to the processing of personal data</span>
-                    </label>
+                    <div class="video-form__check">
+                        <input type="checkbox" id="video-form__checkbox" class="video-form__checkbox">
+                        <label class="video-form__text" for="video-form__checkbox">I agree to the processing of personal data</label>
+                    </div>
                 </form>
             </div>
         </section>

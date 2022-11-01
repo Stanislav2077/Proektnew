@@ -50,6 +50,7 @@ body * {
     margin: 0 auto;
 }
 
+/* кнопка позвониь */
 .button {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -62,10 +63,12 @@ body * {
     font-style: italic;
 }
 
+/* логотип */
 .logo {
     color: #E3B873;
 }
 
+/* шапка */
 .header {
     background-color: #000000;
 }
@@ -99,6 +102,7 @@ body * {
     color: #E3B873;
 }
 
+/* фон первой страницы */
 .hero {
     background-image: url(../images/hero.jpg);
     background-size: cover;
@@ -149,6 +153,7 @@ h1 span {
     padding-bottom: 22px;
 }
 
+/* кнопка 1 */
 .button_1 {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -163,6 +168,8 @@ h1 span {
     font-style: italic;
 }
 
+
+/* кнопка 2 */
 .button_2 {
     background: none;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -176,41 +183,7 @@ h1 span {
     font-style: italic;
 }
 
-.hero2 {
-    background-color: #131313;
-    background-size: cover;
-    height: 707px;
-    padding-top: 194px;
-    position: relative;
-}
-
-.hero2-overlay {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .7)
-}
-
-.hero2-container {
-    position: relative;
-    z-index: 1;
-}
-
-.text2 {
-    margin: 0;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 27px;
-    color: #ffffff;
-    padding-top: 19px;
-    padding-bottom: 41px;
-}
-
+/* фон второй страницы */
 .projects {
     background: #131313;
 }
@@ -224,7 +197,7 @@ h1 span {
 .left-side {
     margin: 0px;
     margin-right: 50px;
-    padding: 177px 50px 35px;
+    padding: 177px 50px 0px;
 }
 
 .project-title {
@@ -248,9 +221,9 @@ h1 span {
     color: #ffffff;
 }
 
-.slider-mobile {
+/* .slider-mobile {
     display: none;
-}
+} */
 
 .project-table:first-of-type {
     margin-bottom: 34px;
@@ -381,6 +354,7 @@ h1 span {
     padding-bottom: 0px;
     margin-right: 55px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .project-link:last-child {
@@ -413,13 +387,18 @@ h1 span {
     align-items: center;
 }
 
+.camera {
+    padding: 0px 717px 48px;
+}
+
+
 .subtitle {
     position: relative;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.subtitle::after {
+/* .subtitle::after {
     position: absolute;
     content: '';
     width: 114px;
@@ -428,22 +407,56 @@ h1 span {
     left: 50%;
     margin-left: -57px;
     background-image: url('../img/camera.svg');
+} */
+
+
+.znak-camera {
+    padding: 12px;
+    border: none;
+    text-align: center;
 }
 
+
 .subtitle-white {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
 .control-wrap {
     position: relative;
-    margin-top: 72px;
+    margin-top: 31px;
     transition: all 0.3s;
 }
 
 .control-img {
+    position: relative;
+    top: 0;
+    left: 0;
     display: block;
     max-width: 817px;
     filter: brightness(20%);
+}
+
+.control-img2 {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -10px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    z-index: 2;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .control-wrap::before {
@@ -459,22 +472,7 @@ h1 span {
     border-radius: 50%;
     z-index: 1;
     transition: all 0.3s;
-}
-
-.control-wrap::after {
-    position: absolute;
-    content: '';
-    width: 28px;
-    height: 28px;
-    top: 50%;
-    left: 50%;
-    margin-top: -14px;
-    margin-left: -10px;
-    background-image: url('../img/Polygon.svg');
-    background-repeat: no-repeat;
-    background-position: center 0;
-    z-index: 2;
-    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .control-wrap:hover::before,  .control-wrap:hover::after{
@@ -482,52 +480,97 @@ h1 span {
 }
 
 .control-text {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 98px;
-    max-width: 680px;
-    font-family: 'NunitoSans-Regular';
-    line-height: 36px;
-    text-align: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+	max-width: 681px;
+	text-align: center;
+    line-height: 37px;
+	margin: 0 auto 91px;
 }
 
-.control-text::before {
-    position: absolute;
-    content: '';
-    width: 56px;
-    height: 2px;
-    top: -34px;
-    left: 50%;
-    margin-left: -28px;
-    background-color: #E3B873;
+.control-text:before {
+	content: '';
+	display: block;
+	background: #E3B873;
+	width: 55px;
+	height: 2px;
+	border-radius: 2px;
+	margin: 62px auto 35px;
 }
 
-.control-form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 770px;
-    margin-top: 92px;
+.video-form__wrap {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }
 
-.label {
-    width: 230px;
-    padding: 0;
-    font-family: 'NunitoSans-Regular';
-    font-size: 13px;
-    color: rgba(54, 54, 54, 0.5);
+.video-form__item {
+	margin-right: 80px
 }
 
-.input {
-    width: 230px;
-    padding: 6px 0px;
-    font-family: 'NunitoSans-Regular';
-    font-size: 14px;
+.video-form__title {
+	display: block;
+	font-size: 13px;
+	color: rgba(54, 54, 54, 0.5);
+}
+
+.video-form__input {
+	font-size: 14px;
+	color: #363636;
+	border: none;
+	padding-right: 71px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.video-form__buttom {
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
     border: none;
-    border-bottom: 1px solid rgba(5, 5, 5, 0.3);
+	font-style: normal;
+	padding: 20px 75px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-input::placeholder {
-    color: #363636;
+.video-form__check {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
 }
 
+.video-form__checkbox {
+	display:none;
+}
+
+.video-form__checkbox + label::before {
+	width: 18px;
+	height: 18px;
+	border-radius: 1px;
+	border: 2px solid #E3B873;
+	background-color: #fff;
+	display: block;
+	content: "";
+	float: left;
+	margin-right: 10px;
+  }
+.video-form__checkbox:checked + label::before {
+	background-color: #E3B873;
+	background-image: url("../img/hacken.svg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+  }
+
+.video-form__text {
+	color: #363636;
+	padding-left: 10px;
+}
