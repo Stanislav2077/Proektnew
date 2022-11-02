@@ -899,7 +899,7 @@ button, button:hover, button:focus, button:active
 
 #kontakt-form__daten:checked + label::before {
 	background-color: #E3B873;
-	background-image: url("../img/hacken.svg");
+	background-image: url("../images/hacken.svg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
