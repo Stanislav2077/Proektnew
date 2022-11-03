@@ -26,7 +26,7 @@
     font-weight: 400;
 }
 
-/* ------ Спецификация ------ */
+/* Спецификация */
 
 body {
 	font-family: Nunito Sans, sans-serif;
@@ -93,9 +93,7 @@ a, button, input {
 }
 
 input, input:hover, input:focus, input:active,
-button, button:hover, button:focus, button:active
-
-{
+button, button:hover, button:focus, button:active {
 	outline: none;
 }
 
@@ -117,7 +115,7 @@ button, button:hover, button:focus, button:active
 	justify-content: space-between;
 }
 
-/* ------ 1 экран ------ */
+/* меню */
 
 .top-panel {
 	background: #131313;
@@ -127,11 +125,12 @@ button, button:hover, button:focus, button:active
 .nav {
 	font-size: 11px;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
 .logo {
+	margin-right: 95px;
+	margin-left: 92px;
 	color: #E3B873;
 	text-transform: uppercase;
 }
@@ -140,7 +139,7 @@ button, button:hover, button:focus, button:active
 	display: flex;
 }
 
-.header-navigation__item{
+.header-navigation__item{ 
 	margin-right: 47px;
 }
 
@@ -155,6 +154,9 @@ button, button:hover, button:focus, button:active
 }
 
 .header__tel {
+	margin-left: 67px;
+	margin-right: 45px;
+    text-decoration-line: underline;
 	color: #E3B873;
 }
 
@@ -171,7 +173,7 @@ button, button:hover, button:focus, button:active
 	cursor: pointer;
 }
 
-    /* 1 экран */
+/* 1 экран */
 
 .bottom-panel {
 	background: #000 url(../images/room.jpg) no-repeat center center / cover;
@@ -190,6 +192,7 @@ button, button:hover, button:focus, button:active
 }
 
 .zindex {
+	padding-left: 134px;
 	color: #fff;
 	position: relative;
 	z-index: 1;
@@ -206,7 +209,7 @@ button, button:hover, button:focus, button:active
 .bottom-panel__text {
 	font-size: 22px;
 	line-height: 36px;
-	margin: 32px 0 41px 0;
+	margin: 19px 0 41px 0;
 }
 
 .bottem-panel__butten {
