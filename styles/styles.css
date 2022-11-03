@@ -160,7 +160,7 @@ button, button:hover, button:focus, button:active {
 	color: #E3B873;
 }
 
-.header__btn {
+.header__btn  {
 	background: #E3B873;
 	font-size: 11px;
 	font-style: italic;
@@ -192,7 +192,7 @@ button, button:hover, button:focus, button:active {
 }
 
 .zindex {
-	padding-left: 134px;
+	padding-left: 135px;
 	color: #fff;
 	position: relative;
 	z-index: 1;
@@ -233,7 +233,7 @@ button, button:hover, button:focus, button:active {
 .control-menu {
 	display: flex;
 	justify-content: flex-end;
-	margin: 0 11px 55px;
+	margin: 0 95px 53px;
 }
 
 .control-menu__link{
@@ -257,7 +257,10 @@ button, button:hover, button:focus, button:active {
 
 .control-project {
 	display: flex;
-	justify-content: space-between;
+}
+
+.control-project__wrap{
+	padding-left: 135px;
 }
 
 .control-project__title {
@@ -268,7 +271,7 @@ button, button:hover, button:focus, button:active {
 .control-project__text {
 	color: #fff;
 	width:452px;
-	margin-top: 37px;
+	margin: 37px 50px 14px 0;
 }
 
 .control-info__menu {
@@ -289,7 +292,6 @@ button, button:hover, button:focus, button:active {
 	font-size: 18px;
 	margin-bottom: 9px;
 }
-
 
 .control-info__text {
 	color: #fff;
@@ -313,6 +315,7 @@ button, button:hover, button:focus, button:active {
 	height: 9px;
 	border-radius: 50px;
 	margin: 0 9px;
+	cursor: pointer;
 }
 
 .control-slayer__radius-white {
@@ -322,13 +325,16 @@ button, button:hover, button:focus, button:active {
 	height: 9px;
 	border-radius: 50px;
 	margin: 0 9px;
+	cursor: pointer;
 }
 
 .control-pfeil__left {
+	cursor: pointer;
 	margin-right: 20px;
 }
 
 .control-pfeil__right {
+	cursor: pointer;
 	margin-left: 20px;
 }
 
@@ -339,6 +345,7 @@ button, button:hover, button:focus, button:active {
 }
 
 .video__title {
+	margin-bottom: 20px;
 	color: #fff;
 }
 
@@ -351,6 +358,47 @@ button, button:hover, button:focus, button:active {
 .video-tube {
 	display: flex;
 	justify-content: center;
+    position: relative;
+    margin-top: 6px;
+    transition: all 0.3s;
+}
+.video-tube__img {
+    display: block;
+    max-width: 817px;
+    filter: brightness(20%);
+}
+.video-tube::before {
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 85px;
+    top: 50%;
+    left: 50%;
+    margin-top: -42px;
+    margin-left: -42px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.video-tube::after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -10px;
+    background-image: url('../images/Polygon.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.video-tube:hover::before,  .video-tube:hover::after{
+    opacity: 0.5;
+	cursor: pointer;
 }
 
 .video-text {
@@ -358,7 +406,7 @@ button, button:hover, button:focus, button:active {
 	text-align: center;
 	font-size: 18px;
     line-height: 37px;
-	margin: 0 auto 91px;
+	margin: 0 auto 92px;
 }
 
 .video-text:before {
@@ -396,9 +444,22 @@ button, button:hover, button:focus, button:active {
 	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
-.video-form__buttom {
+.video-form__buttom_btn{
+	font-family: 'Nunito Sans';
 	font-style: normal;
-	padding: 20px 75px;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 200px;
+	height: 51px;
+	color: #FFFFFF;
+	border: none;
+	background: #E3B873;
+	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .video-form__check {
@@ -422,6 +483,7 @@ button, button:hover, button:focus, button:active {
 	float: left;
 	margin-right: 10px;
 }
+
 .video-form__checkbox:checked + label::before {
 	background-color: #E3B873;
 	background-image: url("../images/hacken.svg");
@@ -434,10 +496,7 @@ button, button:hover, button:focus, button:active {
 	padding-left: 10px;
 }
 
-
-
 /* 4 экран */
-
 
 .repair {
 	padding: 148px 0 133px;
