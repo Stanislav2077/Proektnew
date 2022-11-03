@@ -454,6 +454,7 @@ button, button:hover, button:focus, button:active {
 	text-transform: uppercase;
 	width: 200px;
 	height: 51px;
+
 	color: #FFFFFF;
 	border: none;
 	background: #E3B873;
@@ -499,7 +500,7 @@ button, button:hover, button:focus, button:active {
 /* 4 экран */
 
 .repair {
-	padding: 148px 0 133px;
+	padding: 76px 0 133px;
 }
 
 .repair__title {
