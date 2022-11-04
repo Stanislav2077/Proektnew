@@ -500,7 +500,7 @@ button, button:hover, button:focus, button:active {
 /* 4 экран */
 
 .repair {
-	padding: 76px 0 133px;
+	padding: 76px 0 0px;
 }
 
 .repair__title {
@@ -522,7 +522,7 @@ button, button:hover, button:focus, button:active {
 	background: #FFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
     padding-top: 25px;
-    margin: -125px 50px 70px 30px;
+    margin: -125px 50px 53px 30px;
     position: relative;
     z-index: 1;
 }
@@ -564,23 +564,22 @@ button, button:hover, button:focus, button:active {
 	color: #fff;
 }
 
-
 /* 5 экран */
-
 
 .flet {
 	background: #fff url(../images/flet.svg) no-repeat;
-	padding-top: 97px;
+	padding-top: 40px;
 	height: 645px;
 }
 
 .flet-info {
+	padding-top: 59px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .flet-info__list {
-	margin-left: 150px;
+	margin-left: 230px;
 }
 
 
@@ -616,6 +615,7 @@ button, button:hover, button:focus, button:active {
 	height: 509px;
 	background: #131313;
 	padding: 27px 49px;
+	margin-right: 100px;
 	background: #131313;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
 }
@@ -694,8 +694,7 @@ button, button:hover, button:focus, button:active {
 .flet-schwein__item {
 	display: flex;
 	align-items: center;
-	margin-top: 38px;
-	margin-left: 35px;
+	margin: 38px 0px 130px 35px;
 }
 
 .flet-schwein__icon {
@@ -716,14 +715,16 @@ button, button:hover, button:focus, button:active {
 	margin-left: 25px;
 }
 
-
 /* 6 экран */
-
 
 .fantasies {
 	background: #000 url(../images/fantasies.jpg) no-repeat center center / cover;
 	margin: 240px 0 110px;
 }
+
+/* .container d-flex {
+	padding-top:  100px;
+} */
 
 .fantasies-title {
 	width: 288px;
