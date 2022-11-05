@@ -1,14 +1,24 @@
 {
-    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
-    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
-    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "type": "java",
+            "name": "Attach",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": "<debug port of the debuggee>"
+        },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
             "file": "c:\\Users\\79896\\Desktop\\SkillFactory\\Proektnew\\index.html"
+        },
+        {
+            "type": "node",
+            "name": "JavaScript Debug Terminal",
+            "request": "launch",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
