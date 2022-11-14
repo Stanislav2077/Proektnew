@@ -1,125 +1,80 @@
-let images = [{
-    url: "images/room2.jpg",
-  }, {
-    url: "images/room3.jpg",
-  }, {
-    url: "images/room4.jpg",
-}];
+window.addEventListener('DOMContentLoaded', function() {
 
-function sliderInit(images, options) {
-  if (!images || !images.length) return;
-  
-  options = options || {
-    dots: false,
-    titles: false,
-    autoplay: false,
-    autoplayInterval: 0
-  };
-  
-  let sliderWrapper = document.querySelector(".slider");
-  let sliderImages = document.querySelector(".slider__images");
-  let sliderArrows = document.querySelector(".slider__arrows");
-  let intervalId;
-  
-  initImages();
-  initArrows();
-  
-  if (options.dots) {
-    initDots();
-  }
-  
-  if (options.titles) {
-    initTitles();
-  }
-  
-  if (options.autoplay) {
-    initAutoplay();
-  }
-  
-  function initImages() {
-    images.forEach((image, index) => {
-      let imageElement = document.createElement("div");
-      imageElement.className = `image n${index} ${index === 0? "active" : ""}`;
-      imageElement.dataset.index = index;
-      imageElement.style.backgroundImage = `url(${image.url})`;
-      sliderImages.appendChild(imageElement);
-    });
-  }
-  
-  function initArrows() {
-    sliderArrows.querySelectorAll(".slider__arrow").forEach(arrow => {
-      arrow.addEventListener("click", function() {
-        let lastIndex = images.length - 1;
-        let currentNumber = +sliderImages.querySelector(".active").dataset.index;
-        let nextNumber;
-        if (arrow.classList.contains("left")) {
-          nextNumber = currentNumber === 0? lastIndex : currentNumber - 1;
-        } else {
-          nextNumber = currentNumber === lastIndex? 0 : currentNumber + 1;
+    'use strict';
+
+        // Slider
+
+    let slideIndex = 1,
+        slides = document.querySelectorAll('.control-slayer__img'),
+        prev = document.querySelector('.control-pfeil__left'),
+        next = document.querySelector('.control-pfeil__right'),
+        dotsWrap = document.querySelector('.control-slayer'),
+        dots = document.querySelectorAll('.control-slayer__radius'),
+        menuWrap = document.querySelector('.control-menu'),
+        menu = document.querySelectorAll('.control-menu__link'),
+        stadt = document.querySelectorAll('.control-info__text1'),
+        masse = document.querySelectorAll('.control-info__text2'),
+        zeit = document.querySelectorAll('.control-info__text3');
+
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+
+        if (n > slides.length) {
+            slideIndex = 1;
         }
-        moveSlider(nextNumber);
-        if (options.autoplay) {
-          clearInterval(intervalId);
+        if (n < 1) {
+            slideIndex = slides.length;
         }
-      })
-    });
-  }
-  
-  function moveSlider(num) {
-    sliderImages.querySelector(".active").classList.remove("active");
-    sliderImages.querySelector(`.n${num}`).classList.add("active");
-    
-    if (options.dots) {
-      let dotsWrapper = document.querySelector(".slider__dots");
-      dotsWrapper.querySelector(".active").classList.remove("active");
-      dotsWrapper.querySelector(`.n${num}`).classList.add("active");
+
+        slides.forEach((item) => item.style.display = 'none');
+
+        dots.forEach((item) => item.classList.remove('control-slayer__radius-white'));
+
+        menu.forEach((item) => item.classList.remove('control-menu__link-active'));
+
+        stadt.forEach((item) => item.style.display = 'none');
+
+        masse.forEach((item) => item.style.display = 'none');
+
+        zeit.forEach((item) => item.style.display = 'none');
+
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].classList.add('control-slayer__radius-white');
+        menu[slideIndex - 1].classList.add('control-menu__link-active');
+        stadt[slideIndex - 1].style.display = 'block';
+        masse[slideIndex - 1].style.display = 'block';
+        zeit[slideIndex - 1].style.display = 'block';
     }
-  }
-  
-  function initDots() {
-    let dotsWrapper = document.createElement("div");
-    dotsWrapper.className = "slider__dots";
-    
-    images.forEach((image, index) => {
-      let dot = document.createElement("div");
-      dot.className = `slider__dots-item n${index} ${index === 0? "active" : ""}`
-      dot.dataset.index = index;
-      dot.addEventListener("click", function() {
-        moveSlider(dot.dataset.index);
-        if (options.autoplay) {
-          clearInterval(intervalId);
-        }
-      });
-      dotsWrapper.appendChild(dot);
-    });
-    sliderWrapper.appendChild(dotsWrapper);
-  }
-  
-  function initTitles() {
-    images.forEach((image, index) => {
-      let sliderImage = sliderImages.querySelector(`.n${index}`);
-      let title = document.createElement("div");
-      title.className = "slider__images-title";
-      title.innerText = image.title;
-      sliderImage.appendChild(title);
-    });
-  }
-  
-  function initAutoplay() {
-    intervalId = setInterval(() => {
-      let currentNumber = +sliderImages.querySelector(".active").dataset.index;
-      let nextNumber = currentNumber === images.length - 1 ? 0 : currentNumber + 1;
-      moveSlider(nextNumber);
-    }, options.autoplayInterval);
-  }
-}
 
-document.addEventListener("DOMContentLoaded", function() {
-  let sliderOptions = {
-    dots: false,
-    titles: false,
-    autoplay: true,
-    autoplayInterval: 4000
-  }
-  sliderInit(images, sliderOptions);
+    function plusSlides(n) {
+        showSlides(slideIndex += n); 
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    prev.addEventListener('click', function() {
+        plusSlides(-1);
+    });
+
+    next.addEventListener('click', function() {
+        plusSlides(1);
+    });
+
+    dotsWrap.addEventListener('click', function(event) {
+        for (let i = 0; i < dots.length + 1; i++) {
+            if (event.target.classList.contains('control-slayer__radius') && event.target == dots[i-1]) {
+                currentSlide(i);
+            }
+        }
+    });
+
+    menuWrap.addEventListener('click', function(event) {
+        for (let i = 0; i < menu.length + 1; i++) {
+            if (event.target.classList.contains('control-menu__link') && event.target == menu[i-1]) {
+                currentSlide(i);
+            }
+        }
+    });
 });

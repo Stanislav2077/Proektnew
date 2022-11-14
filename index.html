@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PROEKTNEW</title>
 	<link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="special-style.css">
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <!-- тело -->
 <body>
     <!-- шапка -->
-<header class="header">
+<header class="header" id="header">
 	<div class="top-panel">
 		<div class="container">
 			<div class="nav">
@@ -50,7 +51,7 @@
 	</div>
     <!-- 1 экран -->
 	<div class="bottom-panel">
-		<div class="container zindex">
+		<div class="container_zindex">
 			<h1 class="bottom-panel__title">
 				Turnkey Repair in the <br>city of <span>Rostov-on-Don</span>
 			</h1>
@@ -70,7 +71,7 @@
 	</div>
 </header>
 <!-- 2 экран -->
-<section class="control">
+<section class="control" id="control">
 	<div class="container">
 		<div class="control-menu">
 			<a class="control-menu__link" href="#control">
@@ -137,16 +138,17 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="section__main-right"> -->
-			<div class="slider">
-				<div class="slider__images"></div>
-				<div class="slider__arrows">
-					<div class="slider__arrow left"></div>
-					<div class="slider__arrow right"></div>
+			<div class="sliderContent">
+				<div class="item">
+					<img src="images/room2.jpg" alt="room2" />
 				</div>
-				<!-- </div> -->
+				<div class="item">
+					<img src="images/room3.jpg" alt="room3" />
+				</div>
+				<div class="item">
+					<img src="images/room4.jpg" alt="room4" />
+				</div>
 			</div>
-			<!-- <img src="images/room2.jpg" alt="Room" class="control-slayer__img"> -->
 		</div>
 	</div>
 </section>
@@ -157,7 +159,6 @@
 		<img class="video__icon" src="images/kamera.svg" alt="kamera">
 		<div class="video-tube">
 			<img src="images/observation.jpg" alt="observation" class="video-tube__img">
-			<!-- <iframe width="817" height="434" src="https://www.youtube-nocookie.com/embed/jz2zhmMDaJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 		</div>
 		<p class="video-text">
 			At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
@@ -184,7 +185,7 @@
 	</div>
 </section>
 <!-- 4 экран -->
-<section class="repair">
+<section class="repair" id="repair">
 	<div class="container">
 		<h3 class="repair__title">
 			Types of repair
@@ -303,7 +304,7 @@
 	</div>
 </section>
 <!-- 5 экран -->
-<section class="flet" >
+<section class="flet" id="flet">
 	<div class="container">
 		<div class="flet-info">
 			<div class="flet-info__list">
@@ -372,7 +373,7 @@
 	</div>
 </section>
 <!-- 6 экран -->
-<section class="fantasies">
+<section class="fantasies" id="fantasies">
 	<div class="container d-flex">
 		<div class="fantasies-wrap">
 			<h2 class="fantasies-title">
@@ -447,7 +448,7 @@
 	</div>
 </section>
 <!-- 7 экран -->
-<section class="client">
+<section class="client" id="client">
 	<div class="container__client">
 		<h3 class="client__title">
 			our clients
@@ -538,7 +539,7 @@ to Georgia for its professionalism and approach.
 	</div>
 </section>
 <!-- 8 экран -->
-<section class="kont">
+<section class="kont" id="kont">
 	<div class="container">
 		<div class="kont-form-wrapper">
 			<div class="kont-form">
@@ -581,7 +582,7 @@ to Georgia for its professionalism and approach.
 	</div>
 </section>
 <!-- подвал -->
-<footer class="footer">
+<footer class="footer" id="footer">
 	<div class="top-panel footer-top-panel">
 		<div class="container">
 			<div class="nav">
@@ -630,9 +631,7 @@ to Georgia for its professionalism and approach.
 		</div>
 	</div>
 </footer>
-<script src="js/script.js"></script>
-<!-- mobile -->
-<!-- <section class="mobile">
+<section class="mobile" id="mobile">
 	<div class="container">
 		<div class="mobile-wrap">
 			<h2 class="mobile-title">
@@ -666,16 +665,17 @@ to Georgia for its professionalism and approach.
 				</button>
 			</form>
 		</div>
-		<img src="img/karte.jpg" alt="karte" class="kontakt-info__karte">
+		<img src="images/karte.jpg" alt="karte" class="kontakt-info__karte">
 		<h3 class="mobile-info__title">
 			Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
 		</h3>
 		<div class="mobile-info__icon">
-			<img src="img/email.svg" alt="E-mail" class="mobile-info__icon-margin">
-			<img src="img/instagram.svg" alt="Instagram">
+			<img src="images/email.svg" alt="E-mail" class="mobile-info__icon-margin">
+			<img src="images/instagram.svg" alt="Instagram">
 		</div>
 	</div>
-</section> -->
+</section>
+<script src="js/script.js"></script>
 </body>
 </html>
 
