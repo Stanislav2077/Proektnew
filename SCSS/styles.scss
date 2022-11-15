@@ -136,7 +136,7 @@ justify-content: space-between;
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -663,107 +663,6 @@ cursor: pointer;
 margin-left: 20px;
 }
 
-/* slider */
-
-.slider {
-  float:left;
-  width:800px;
-  height:350px;
-  position:relative;
-  padding-bottom:26px;
-  background:url(../images/left.svg) no-repeat bottom center;
-  }
-  
-  .sliderContent {
-  float:left;
-  width:800px;
-  height:350px;
-  clear:both;
-  position:relative;
-  overflow:hidden;
-  }
-  
-  .sliderArrows a {
-  display:block;
-  text-indent:-9999px;
-  outline:none;
-  z-index:50;
-  background-image:url(../images/right.svg);
-  width:42px;
-  height:42px;
-  position:absolute;
-  top:50%;
-  margin-top:-34px;
-  }
-  
-  .prev {
-  background-position:0 0;
-  left:15px;
-  }
-  
-  .prev:hover {
-  background-position:0 -44px;
-  }
-  
-  .next {
-  right:15px;
-  background-position:-44px 0;
-  }
-  
-  .next:hover {
-  background-position:-44px -44px;
-  }
-  
-  .sliderContent {
-    position:right;
-    width: 680px;
-    height: 483px;
-    background:#fff;
-    }
-    
-  
-  .item {
-  position:absolute;
-  width: 680px;
-  height: 483px;
-  background:#fff;
-  }
-  
-  .sliderBullets {
-  position:absolute;
-  bottom:0;
-  left:50%;
-  z-index:50;
-  margin-left:-45px;
-  }
-  
-  .sliderBullets a {
-  display:block;
-  float:left;
-  text-indent:-9999px;
-  outline:none;
-  margin-left:5px;
-  width:10px;
-  height:11px;
-  background:url(../gfx/bullets.png) no-repeat;
-  }
-  
-  .sliderBullets .active {
-  background-position:0 -11px;
-  }
-  
-  .sliderContent a {
-  outline:none;
-  }
-  
-  a {
-  color:#fff;
-  }
-  
-  a img {
-  border:none;
-  }
-
 /* 3 экран */
 
 .video {
@@ -993,42 +892,42 @@ color: #fff;
 /* 5 экран */
 
 .flet {
-background: #fff url(../images/flet.svg) no-repeat;
-padding-top: 40px;
-padding-bottom: 100px;
-height: 645px;
+  background: #fff url(../images/flet.svg) no-repeat;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  height: 645px;
 }
 
 .flet-info {
-padding-top: 59px;
-display: flex;
-justify-content: space-between;
+  padding-top: 59px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .flet-info__list {
-margin-left: 230px;
+  margin-left: 230px;
 }
 
 
 .flet-info__item {
-display: flex;
-align-items: center;
-margin-bottom: 85px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 85px;
 }
 
 .flet-info__icon {
-font-family: "Yeseva One", sans-serif;
+  font-family: "Yeseva One", sans-serif;
   background: #E3B873;
   color: #fff;
   font-size: 18px;
-border: 8px solid #FFFFFF;
-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-border-radius: 50px;
-width: 60px;
-height: 60px;
-display: flex;
-align-items: center;
-justify-content: center;
+  border: 8px solid #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flet-info__text {
@@ -1071,12 +970,16 @@ margin-top: 35px;
 font-family: "Nunito Sans", sans-serif;
 display: block;
 background-color: transparent;
-color: #fff;
+color: #ffffff;
 border: none;
 border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 padding: 7px 258px 3px 0;
 font-size: 14px;
 line-height: 23px;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
 }
 
 .flet-form__check {

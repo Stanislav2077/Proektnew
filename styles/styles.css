@@ -548,90 +548,6 @@ template {
   cursor: pointer;
   margin-left: 20px; }
 
-/* slider */
-.slider {
-  float: left;
-  width: 800px;
-  height: 350px;
-  position: relative;
-  padding-bottom: 26px;
-  background: url(../images/left.svg) no-repeat bottom center; }
-
-.sliderContent {
-  float: left;
-  width: 800px;
-  height: 350px;
-  clear: both;
-  position: relative;
-  overflow: hidden; }
-
-.sliderArrows a {
-  display: block;
-  text-indent: -9999px;
-  outline: none;
-  z-index: 50;
-  background-image: url(../images/right.svg);
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  top: 50%;
-  margin-top: -34px; }
-
-.prev {
-  background-position: 0 0;
-  left: 15px; }
-
-.prev:hover {
-  background-position: 0 -44px; }
-
-.next {
-  right: 15px;
-  background-position: -44px 0; }
-
-.next:hover {
-  background-position: -44px -44px; }
-
-.sliderContent {
-  position: right;
-  width: 680px;
-  height: 483px;
-  background: #fff; }
-
-.item {
-  position: absolute;
-  width: 680px;
-  height: 483px;
-  background: #fff; }
-
-.sliderBullets {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  z-index: 50;
-  margin-left: -45px; }
-
-.sliderBullets a {
-  display: block;
-  float: left;
-  text-indent: -9999px;
-  outline: none;
-  margin-left: 5px;
-  width: 10px;
-  height: 11px;
-  background: url(../gfx/bullets.png) no-repeat; }
-
-.sliderBullets .active {
-  background-position: 0 -11px; }
-
-.sliderContent a {
-  outline: none; }
-
-a {
-  color: #fff; }
-
-a img {
-  border: none; }
-
 /* 3 экран */
 .video {
   margin-top: -320px; }
@@ -900,12 +816,15 @@ a img {
   font-family: "Nunito Sans", sans-serif;
   display: block;
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding: 7px 258px 3px 0;
   font-size: 14px;
   line-height: 23px; }
+
+input::-webkit-input-placeholder {
+  color: #ffffff; }
 
 .flet-form__check {
   margin: 16px 0 39px; }
@@ -1248,7 +1167,7 @@ a img {
     margin: 0 18px; }
 
   .header-navigation {
-    display: n; }
+    display: none; }
 
   .header-navigation__link {
     display: none; }

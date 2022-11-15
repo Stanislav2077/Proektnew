@@ -33,11 +33,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
         menu.forEach((item) => item.classList.remove('control-menu__link-active'));
 
-        stadt.forEach((item) => item.style.display = 'none');
+        stadt.forEach((item) => item.style.display = '.control-info__text1');
 
-        masse.forEach((item) => item.style.display = 'none');
+        masse.forEach((item) => item.style.display = '.control-info__text2');
 
-        zeit.forEach((item) => item.style.display = 'none');
+        zeit.forEach((item) => item.style.display = '.control-info__text3');
 
         slides[slideIndex - 1].style.display = 'block';
         dots[slideIndex - 1].classList.add('control-slayer__radius-white');
