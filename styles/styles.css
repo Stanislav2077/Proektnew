@@ -373,11 +373,10 @@ template {
 .nav {
   font-size: 11px;
   display: flex;
+  justify-content: space-between;
   align-items: center; }
 
 .logo {
-  margin-right: 95px;
-  margin-left: 92px;
   color: #E3B873;
   text-transform: uppercase; }
 
@@ -396,9 +395,6 @@ template {
   color: #E3B873; }
 
 .header__tel {
-  margin-left: 67px;
-  margin-right: 45px;
-  text-decoration-line: underline;
   color: #E3B873; }
 
 .header__btn {
@@ -553,7 +549,6 @@ template {
   margin-top: -320px; }
 
 .video__title {
-  margin-bottom: 20px;
   color: #fff; }
 
 .video__icon {
@@ -569,8 +564,8 @@ template {
   transition: all 0.3s; }
 
 .video-tube__img {
-  display: block;
-  max-width: 817px;
+  display: flex;
+  justify-content: center;
   filter: brightness(20%); }
 
 .video-tube::before {
@@ -1207,6 +1202,9 @@ input::-webkit-input-placeholder {
   .control-project {
     flex-direction: column; }
 
+  .control-project__wrap {
+    display: contents; }
+
   .control-menu {
     display: none; }
 
@@ -1245,7 +1243,10 @@ input::-webkit-input-placeholder {
     line-height: 169%;
     margin-bottom: 0; }
 
-  .video-text:before {
+  .video-tube__img {
+    width: 100%; }
+
+  .video-text::before {
     margin: 28px auto 21px; }
 
   .video-form__wrap {
@@ -1254,6 +1255,7 @@ input::-webkit-input-placeholder {
     position: relative; }
 
   .video-form__title {
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 61px; }
 
   .video-form__item {
@@ -1263,12 +1265,26 @@ input::-webkit-input-placeholder {
     width: 100%;
     background: transparent; }
 
+  .video-form__buttom_btn {
+    font-family: Nunito Sans, sans-serif;
+    width: 100%;
+    display: block;
+    margin: 62px auto 34px;
+    font-size: 13px;
+    padding: 15px 74px;
+    font-style: normal;
+    margin-bottom: 50px; }
+
+  .video-form__text {
+    display: block;
+    width: 100%;
+    margin: -180px auto 0px;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF; }
+
   .video-form__check {
     justify-content: start; }
-
-  .video-form__buttom {
-    position: absolute;
-    top: 315px; }
 
   .repair {
     padding-bottom: 250px; }
